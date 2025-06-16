@@ -1,0 +1,41 @@
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index:  10;
+  height: 70px;
+  background-color: white;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  padding: 0 20px;
+}
+
+.sidebar {
+  top: 70px;
+  background-color: white;
+  height: 100vh;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  padding: 20px 0;
+  z-index: 2;
+}
+
+.sidebar-link {
+  font-size: 18px;
+  color: #495057;
+  font-weight: 400;
+  border-radius: 6px;
+  transition: 0.3s;
+  margin: 0 8px;
+}
+.sidebar-link:hover {
+  color: #383c40;
+}
+
+.sidebar .active {
+  background-color: #f2f3fe;
+  color: #038edc;
+}
+.sidebar .active:hover {
+  color: #038edc;
+}
