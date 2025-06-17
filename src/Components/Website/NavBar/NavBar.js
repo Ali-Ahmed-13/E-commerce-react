@@ -29,6 +29,7 @@ export default function NavBar() {
     Axios.get(`/${CATEGORIES}`)
       .then((res) => {
         setCategories(res.data.slice(-8));
+        console.log(res.data);
       })
       .finally(() => setLoading(false));
   }, []);
