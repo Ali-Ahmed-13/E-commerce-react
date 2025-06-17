@@ -63,7 +63,13 @@ export default function TableShow(props) {
       {props.header.map((item2, key2) => (
         <td key={key2}>
           {item2.key === "image" ? (
-            <img width={"50px"} src={item[item2.key]} alt="" />
+            <img
+              width={"50px"}
+              src={
+                "https://api-react-production.up.railway.app" + item[item2.key]
+              }
+              alt=""
+            />
           ) : item2.key === "images" ? (
             <div className="d-flex align-items-center juustify-content-center gap-2 flex-wrap">
               {item[item2.key].map((image, key3) => {
