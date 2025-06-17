@@ -1,4 +1,4 @@
-export const baseURL = "https://api-react-production.up.railway.app//api";
+export const baseURL = "https://api-react-production.up.railway.app/api";
 
 export const REGISTER = "register";
 
