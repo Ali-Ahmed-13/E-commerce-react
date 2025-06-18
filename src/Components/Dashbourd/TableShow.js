@@ -68,7 +68,7 @@ export default function TableShow(props) {
               src={
                 "https://api-react-production.up.railway.app" + item[item2.key]
               }
-              alt=""
+              alt="Img"
             />
           ) : item2.key === "images" ? (
             <div className="d-flex align-items-center juustify-content-center gap-2 flex-wrap">
@@ -78,7 +78,10 @@ export default function TableShow(props) {
                     key={key3}
                     style={{ marginRight: "4px" }}
                     width={"50px"}
-                    src={image.image}
+                    src={
+                      "https://api-react-production.up.railway.app" +
+                      image.image
+                    }
                     alt=""
                   />
                 );
