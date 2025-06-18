@@ -42,6 +42,7 @@ export default function Register() {
         password: form.password,
       });
       setLoading(false);
+      console.log(res.data);
       let token = res.data.token;
       cookie.set("token", token);
       let role = res.data.user.role;
@@ -59,6 +60,7 @@ export default function Register() {
         setLoading(false);
         setErr("Email Or Password Is Incorrect");
       } else {
+        console.log(err)
         setLoading(false);
         setErr("Internal Server Error");
       }
