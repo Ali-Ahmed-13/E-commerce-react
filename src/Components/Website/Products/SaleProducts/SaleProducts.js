@@ -13,7 +13,10 @@ export default function WebSiteProducts(props) {
     <FontAwesomeIcon key={index} icon={regularStar} />
   ));
   return (
-    <NavLink to={`/product/${props.id}`} className={`col-md-6 col-12 ${props.lg && "col-lg-3"}`}>
+    <NavLink
+      to={`/product/${props.id}`}
+      className={`col-md-6 col-12 ${props.lg && "col-lg-3"}`}
+    >
       <div className="m-1 border rounded p-3 h-100">
         <div className="border-bottom pb-3">
           <p className="text-truncate" style={{ color: "gray" }}>
@@ -29,7 +32,11 @@ export default function WebSiteProducts(props) {
                 Sale
               </p>
             )}
-            <img src={props.img} alt="Thermometer" className="img-fluid" />
+            <img
+              src={"https://api-react-production.up.railway.app" + props.img}
+              alt="Thermometer"
+              className="img-fluid"
+            />
           </div>
         </div>
         <div className="d-flex align-items-center justify-content-between mt-2">
