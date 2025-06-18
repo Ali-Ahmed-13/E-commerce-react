@@ -158,7 +158,7 @@ export default function NavBar() {
                   alt="Cart"
                 />
               </div>
-              <Link to="/profile">
+              <Link to="/register">
                 <img
                   width="35px"
                   src={require("../../../Assets/icons/profile.png")}
