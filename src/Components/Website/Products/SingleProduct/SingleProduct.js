@@ -38,7 +38,12 @@ export default function SingleProduct() {
       .then((res) => {
         setProductImages(
           res.data[0].images.map((img) => {
-            return { original: img.image, thumbnail: img.image };
+            return {
+              original:
+                "https://api-react-production.up.railway.app" + img.image,
+              thumbnail:
+                "https://api-react-production.up.railway.app" + img.image,
+            };
           })
         );
         setProduct(res.data[0]);

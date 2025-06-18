@@ -22,7 +22,12 @@ export default function WebsiteCategories() {
       className="col-lg-2 col-md-6 col-12 bg-transparent border-0"
     >
       <div className="-1 bg-white border d-flex align-items-center justify-content-start gap-3 rounded py-2 h-100">
-        <img className="ms-3" width="50px" src={item.image} alt="category" />
+        <img
+          className="ms-3"
+          width="50px"
+          src={"https://api-react-production.up.railway.app" + item.image}
+          alt="category"
+        />
         <p className="m-0">{stringSlice(item.title, 12)}</p>
       </div>
     </div>

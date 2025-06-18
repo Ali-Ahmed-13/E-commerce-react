@@ -21,7 +21,7 @@ export default function TopRated(props) {
       <div
         className="col-md-4 col-12"
         style={{
-          backgroundImage: `url(${props.img})`,
+          backgroundImage: `url(https://api-react-production.up.railway.app${props.img})`,
           backgroundPosition: "center",
           backgroundSize: "cover",
           height: "100px",
