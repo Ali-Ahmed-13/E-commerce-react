@@ -75,7 +75,10 @@ export default function NavBar() {
       </div>
       <div className="d-flex align-items-start gap-2 flex-wrap">
         <img
-          src={product.images[0].image}
+          src={
+            "https://api-react-production.up.railway.app" +
+            product.images[0].image
+          }
           height="80px"
           style={{ objectFit: "cover" }}
           className="rounded col-sm-3 col-12"
