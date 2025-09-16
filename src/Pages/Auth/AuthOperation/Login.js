@@ -55,16 +55,23 @@ export default function Register() {
           : "/dashboard/categories";
       window.location.pathname = go;
     } catch (err) {
-      if (err.response.status === 401) {
-        setLoading(false);
-        setErr("Email Or Password Is Incorrect");
+      setLoading(false);
+      if (err.response) {
+        if (err.response.status === 401) {
+          setErr("Email Or Password Is Incorrect");
+        } else {
+          setErr("Internal Server Error");
+        }
+      } else if (err.request) {
+        console.error("No response received:", err.request);
+        setErr("Network Error: Cannot reach the server");
       } else {
-        console.log(err)
-        setLoading(false);
-        setErr("Internal Server Error");
+        console.error("Error", err.message);
+        setErr("Something went wrong");
       }
     }
   }
+
   //,   Return
   return (
     <>
