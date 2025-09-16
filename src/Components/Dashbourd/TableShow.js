@@ -50,7 +50,7 @@ export default function TableShow(props) {
       search.length > 0 ? getSearchedData() : setSearchLoading(false);
     }, 800);
     return () => clearTimeout(debounce);
-  }, [search]);
+  }, []);
 
   /// Map Header
   let headerShow = props.header.map((item, key) => (

@@ -1,5 +1,5 @@
 import axios from "axios";
-import { use, useEffect, useRef, useState } from "react";
+import {  useEffect, useRef, useState } from "react";
 import { baseURL, REGISTER } from "../../../Api/Api";
 import Loading from "../../../Components/Loading/Loading";
 import Cookie from "cookie-universal";

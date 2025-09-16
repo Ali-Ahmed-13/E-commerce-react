@@ -42,7 +42,6 @@ export default function Register() {
         password: form.password,
       });
       setLoading(false);
-      console.log(res.data);
       let token = res.data.token;
       cookie.set("token", token);
       let role = res.data.user.role;
