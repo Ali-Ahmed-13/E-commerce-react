@@ -1,4 +1,4 @@
-export const baseURL = "https://e-commers.lovestoblog.com/";
+export const baseURL = "https://e-commers.lovestoblog.com/api";
 
 export const REGISTER = "register";
 
